@@ -1834,9 +1834,9 @@ should(<span class="hljs-keyword">void</span> <span class="hljs-number">0</span>
                 <a href="#toc" title="Jump back to the TOC.">&#x24C9;</a>
             </div>
 
-            <div class="description-section" ><p>Assert that given object is contain equally structured object on the same depth level.<br />If given object is an array and <code>other</code> is an array it checks that the eql elements is going in the same sequence in given array (recursive)<br />For string it is working as <code>Assertion#containEql
-If given object is an object it checks that the same keys contain deep equal values (recursive)
-On other cases it try to check with</code>.eql`</p></div>
+            <div class="description-section" ><p>Проверяет, что данный объект содержит equally structured object на том же уровне глубины.<br />Если данный объект является массивом и <code>other</code> является массивом, то он рекурсивно проверяет, что проверяемые элементы идут в той же последовательности, что и в данном массиве<br />Для строковых параметров он работает как <code>Assertion#containEql
+Если данный объект имеет тип Object, то идет глубкая рекурсивная проверка ключей массива.
+В остальных случаях попробуйте использовать метод</code>.eql`</p></div>
 
             
             
@@ -1844,11 +1844,11 @@ On other cases it try to check with</code>.eql`</p></div>
             
 
             
-            <h4>Arguments</h4>
+            <h4>Аргументы</h4>
             <ol>
                 
                 <li>
-                    <code>other</code> <em>(*)</em>: <p>Nested object</p>
+                    <code>other</code> <em>(*)</em>: <p>Вложенный объект</p>
                 </li>
                 
             </ol>
@@ -1857,7 +1857,7 @@ On other cases it try to check with</code>.eql`</p></div>
             
             
             
-            <h4>Example</h4>
+            <h4>Пример</h4>
             <pre><code class="hljs javascript">[ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].should.containDeepOrdered([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]);
 [ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, [ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ]].should.containDeepOrdered([ <span class="hljs-number">1</span>, [ <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ]]);
 
